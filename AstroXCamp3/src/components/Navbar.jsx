@@ -14,7 +14,14 @@ function Navbar() {
         <div className="flex items-center justify-between">
 
           {/* Logo */}
-          <Link to="/" aria-label="Go to homepage">
+          <Link to="/#hero" aria-label="Go to homepage" onClick={(e) => {
+            if (window.location.pathname === "/") {
+              e.preventDefault();
+              document.getElementById("hero")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }
+          }}>
             <img
               src="/logo.png"
               alt="AstroXCamp"
@@ -23,13 +30,56 @@ function Navbar() {
           </Link>
           {/* Desktop navigation */}
           <div className="hidden items-center gap-5 md:flex text-white/75 text-[11.5px] font-semibold">
-            <a className="hover:text-pink/100" href="#about">About</a>
-            <a className="hover:text-pink/100" href="#workshops">Workshops</a>
-            <a className="hover:text-pink/100" href="#conferences">Conferences</a>
-            <a className="hover:text-pink/100" href="#challenge">Challenge</a>
-            <a className="hover:text-pink/100" href="#agenda">Agenda</a>
-            <a className="hover:text-pink/100" href="#F&Q">F&Q</a>
-            {/* Register button - desktop */}
+            <a className="hover:text-pink/100" href="#about" onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                document.getElementById("about")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }}>About</a>
+            <a className="hover:text-pink/100" href="#workshops" onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                document.getElementById("workshops")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }}>Workshops</a>
+            <a className="hover:text-pink/100" href="#conferences" onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                document.getElementById("conferences")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }}>Conferences</a>
+            <a className="hover:text-pink/100" href="#challenge" onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                document.getElementById("challenge")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }}>Challenge</a>
+            <a className="hover:text-pink/100" href="#agenda" onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                document.getElementById("agenda")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }}>Agenda</a>
+            <a className="hover:text-pink/100" href="#f&q" onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                document.getElementById("f&q")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }}>F&Q</a>
+
+            {/* Register button  */}
             <Link
               to="/form"
               className="hidden rounded-full h-10 ml-2 bg-yellow pl-5 pr-4 md:flex items-center text-[11px] 
