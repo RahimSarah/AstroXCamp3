@@ -1,0 +1,236 @@
+
+/* Main section */
+.technologies {
+  background: #100c2d;
+  color: #ffffff;
+  padding: 100px 5.7%;
+  font-family: inherit;
+}
+
+/* Heading and introduction */
+.technologies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 75px;
+}
+
+.technologies-title h2 {
+  font-size: clamp(42px, 6vw, 90px);
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.technologies-title h2 span {
+  color: #f36bad;
+}
+
+.technologies-intro {
+  max-width: 480px;
+  padding-top: 15px;
+}
+
+.technologies-intro p {
+  color: #aaa4c5;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Cards layout */
+.tracks-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Individual card */
+.track-card {
+  min-height: 450px;
+  padding: 35px 25px 25px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+    145deg,
+    #29213f,
+    #1b1632
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+
+  transition: transform 0.3s ease,
+              border-color 0.3s ease;
+}
+
+.track-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Track number and icon */
+.track-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.track-number {
+  color: #9992b3;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.track-icon {
+  min-width: 64px;
+  height: 64px;
+  padding: 0 8px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid currentColor;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* Track colors */
+.track-card.pink .track-icon,
+.track-card.pink .track-application span,
+.track-card.pink .track-mentor p {
+  color: #f36bad;
+}
+
+.track-card.blue .track-icon,
+.track-card.blue .track-application span {
+  color: #7385ff;
+}
+
+.track-card.yellow .track-icon,
+.track-card.yellow .track-application span {
+  color: #f9ca45;
+}
+
+.track-card.purple .track-icon,
+.track-card.purple .track-application span,
+.track-card.purple .track-mentor p {
+  color: #a77aff;
+}
+
+/* Card content */
+.track-content h3 {
+  font-size: 25px;
+  line-height: 1.25;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.track-description {
+  color: #aaa5bd;
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Space application */
+.track-application {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  padding: 22px 0;
+  margin-top: auto;
+}
+
+.track-application span,
+.track-mentor span {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.track-application p {
+  color: #c4bfd2;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0 0;
+}
+
+/* Mentor */
+.track-mentor {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 22px;
+}
+
+.mentor-avatar {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #50345d;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.track-mentor span {
+  color: #827b9d;
+  font-size: 9px;
+}
+
+.track-mentor p {
+  margin: 6px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .tracks-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .technologies {
+    padding: 65px 20px;
+  }
+
+  .technologies-header {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .technologies-title h2 {
+    font-size: 43px;
+    letter-spacing: -1.5px;
+  }
+
+  .technologies-intro p {
+    font-size: 15px;
+  }
+
+  .tracks-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .track-card {
+    min-height: 400px;
+  }
+}

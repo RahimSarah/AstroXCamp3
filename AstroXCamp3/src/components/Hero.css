@@ -1,0 +1,156 @@
+
+/* HERO SECTION */
+
+.hero {
+  min-height: 90vh;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  padding: 60px 6%;
+
+  /* Background image */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+  width: 55%;
+  max-width: 750px;
+  position: relative;
+  z-index: 1;
+}
+
+/* SMALL INTRODUCTION */
+
+.hero-tagline {
+  color: #f5c94a;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+/* MAIN HEADLINE */
+
+.hero-content h1 {
+  font-family: Arial, sans-serif;
+  font-size: clamp(42px, 5.5vw, 76px);
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+.hero-content h1 span {
+  color: #f36bb2;
+}
+
+/* DESCRIPTION */
+
+.hero-description {
+  color: #c9c5df;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin-top: 25px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #f5c94a;
+  color: #17102e;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 0 #ed69ae;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 7px 10px 0 #ed69ae;
+}
+
+.secondary-btn {
+  color: white;
+  padding: 15px 0;
+  border-bottom: 1px solid #77708f;
+}
+
+.secondary-btn:hover {
+  color: #f36bb2;
+}
+
+/* EVENT INFORMATION */
+
+.hero-event-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 55px;
+
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #aaa4c5;
+}
+
+.hero-event-info span:first-child {
+  color: #48dfc1;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+    padding: 50px 6%;
+    background-position: 65% center;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .hero-event-info {
+    font-size: 9px;
+  }
+}
+
