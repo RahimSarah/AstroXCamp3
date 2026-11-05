@@ -7,7 +7,7 @@ function About() {
       <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
         <div className="lg:self-start">
           <p className="font-title text-[10px] font-[450] text-dark-purple mb-[3%]">
-            02&ensp;/&ensp;THE&ensp;
+            01&ensp;/&ensp;THE&ensp;
             <span className="bg-[#FF69B4] px-1 text-dark">EXPERIENCE</span>
           </p>
           <h2 className="font-title text-[clamp(75px,6vw,112px)] font-bold leading-[0.95] tracking-[-7px] text-dark">
@@ -33,14 +33,14 @@ function About() {
             <div>
               LEARN
             </div>
-                          <ArrowRight className="text-pink" size={18} strokeWidth={2} />
+            <ArrowRight className="text-pink" size={18} strokeWidth={2} />
 
-             <div>
+            <div>
               EXPLORE
             </div>
-                                     <ArrowRight className="text-pink" size={18} strokeWidth={2} />
+            <ArrowRight className="text-pink" size={18} strokeWidth={2} />
 
-             <div>
+            <div>
               BUILD
             </div>
           </div>
