@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import heroBackground from '../assets/bghero.png'
 import './Hero.css'
 
-function Hero() {
+function Hero({ onRegister }) {
   return (
     <section
-  className="hero"
-  style={{ backgroundImage: `url(${heroBackground})` }}
->
+      className="hero"
+      style={{ backgroundImage: `url(${heroBackground})` }}
+    >
 
       <div className="hero-content">
 
@@ -29,9 +29,9 @@ function Hero() {
 
         <div className="hero-buttons">
 
-          <Link to="/form" className="hero-btn primary-btn">
+          <button onClick={onRegister} className="hero-btn primary-btn">
             Register Now
-          </Link>
+          </button>
 
           <a href="#workshops" className="hero-btn secondary-btn">
             Discover the Event

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 
-function Navbar() {
+function Navbar({onRegister}) {
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-transparent backdrop-blur-sm">
@@ -80,15 +80,15 @@ function Navbar() {
             }}>F&Q</a>
 
             {/* Register button  */}
-            <Link
-              to="/form"
-              className="hidden rounded-full h-10 ml-2 bg-yellow pl-5 pr-4 md:flex items-center text-[11px] 
-                     text-black/80 font-normal gap-1.5 md:block hover:text-pink font-title"
+            <button
+              type="button"
+              onClick={onRegister}
+              className="hidden rounded-full h-10 ml-2 bg-yellow pl-5 pr-4 md:flex items-center text-[11px]
+             text-black/80 font-normal gap-1.5 hover:text-pink font-title cursor-pointer"
             >
               REGISTER
-
               <ArrowRight size={15} strokeWidth={1.4} />
-            </Link>
+            </button>
           </div>
         </div>
 

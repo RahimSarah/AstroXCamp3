@@ -85,6 +85,9 @@
 }
 
 .primary-btn {
+   border: none;
+  cursor: pointer;
+  font-family: inherit;
   background-color: #f5c94a;
   color: #17102e;
   padding: 20px 30px;
