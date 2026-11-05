@@ -85,49 +85,44 @@ function ConferenceCard({ conference }) {
     </article>
   );
 }
-
 function Conferences() {
   return (
-    <section className="conferences-section" id="conferences">
-      <div className="conferences-container">
+    <section
+      id="conferences"
+      className="w-full bg-[#F0EAF8] grid grid-cols-1 lg:grid-cols-[40%_60%] px-5 py-12 md:px-12 lg:px-22 lg:py-20 gap-10 lg:gap-16"
+    >
+      {/* LEFT COLUMN */}
+      <div>
+        <p className="font-title text-[10px] font-[450] text-dark-purple mb-[3%]">
+          03&ensp;/&ensp;ASTRONOMY&ensp;
+          <span className="bg-[#FF69B4] px-1 text-dark">CONFERENCES</span>
+        </p>
 
-        {/* LEFT COLUMN */}
-        <div className="conferences-intro">
-          <div className="section-label">
-            <span>03 / ASTRONOMY</span>
-            <span className="highlight-label">CONFERENCES</span>
-          </div>
+        <h1 className="font-title text-[clamp(75px,6vw,112px)] font-bold leading-[0.95] tracking-[-7px] text-dark">
+          Beyond
+          <br />
+          the
+        </h1>
+        <h1 className="font-title text-[clamp(75px,6vw,112px)] font-bold leading-[0.95] tracking-[-7px] text-dark-purple mb-[3%]">
+          known.
+        </h1>
 
-          <h1>
-            Beyond
-            <br />
-            the
-            <br />
-            known.
-          </h1>
+        <p className="font-text text-[15px] font-[500] text-black/55 mb-[3%]">
+          Meet the people exploring the science
+          <br className="hidden md:block" />
+          of life beyond Earth.
+        </p>
+        <p className="font-text text-[15px] font-[500] text-black/55 mb-[6%]">
+          From distant planets to human survival in space, discover the science
+          that could shape humanity’s future.
+        </p>
+      </div>
 
-          <h3>
-            Meet the people exploring the science
-            <br className="desktop-break" />
-            of life beyond Earth.
-          </h3>
-
-          <p className="intro-description">
-            From distant planets to human survival in space,
-            discover the science that could shape humanity’s future.
-          </p>
-        </div>
-
-        {/* RIGHT COLUMN */}
-        <div className="conferences-list">
-          {conferences.map((conference) => (
-            <ConferenceCard
-              key={conference.number}
-              conference={conference}
-            />
-          ))}
-        </div>
-
+      {/* RIGHT COLUMN */}
+      <div className="conferences-list">
+        {conferences.map((conference) => (
+          <ConferenceCard key={conference.number} conference={conference} />
+        ))}
       </div>
     </section>
   );

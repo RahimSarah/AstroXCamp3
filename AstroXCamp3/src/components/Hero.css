@@ -2,16 +2,17 @@
 /* HERO SECTION */
 
 .hero {
-  min-height: 90vh;
+  --nav-h: 40px; 
+
+  border-top: var(--nav-h) solid #20125c;
+  min-height: calc(100svh - var(--nav-h));
   width: 100%;
   box-sizing: border-box;
 
   display: flex;
   align-items: center;
 
-  padding: 60px 6%;
-
-  /* Background image */
+  padding: 60px 88px;
 
   background-size: cover;
   background-position: center;
@@ -32,20 +33,21 @@
 /* SMALL INTRODUCTION */
 
 .hero-tagline {
+  font-family: Space Grotesk, sans-serif;
   color: #f5c94a;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 3px;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* MAIN HEADLINE */
 
 .hero-content h1 {
-  font-family: Arial, sans-serif;
   font-size: clamp(42px, 5.5vw, 76px);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.0;
   margin: 20px 0;
   color: #ffffff;
 }
@@ -57,6 +59,7 @@
 /* DESCRIPTION */
 
 .hero-description {
+  font-family: Space Grotesk, sans-serif;
   color: #c9c5df;
   font-size: 18px;
   line-height: 1.8;

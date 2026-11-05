@@ -3,94 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 
-/* =========================
-   GLOBAL CONFERENCES SECTION
-========================= */
-
-.conferences-section {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #F0EAF8;
-  padding: 40px 6% 80px;
-  box-sizing: border-box;
-  color: #171238;
-  font-family: 'DM Sans', sans-serif;
-}
-
-.conferences-container {
-  width: 100%;
-  max-width: 1608px;
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: 40% 60%;
-  column-gap: 35px;
-
-  align-items: start;
-}
-
-
-/* =========================
-   LEFT COLUMN
-========================= */
-
-.conferences-intro {
-  padding-top: 0;
-  position: sticky;
-  top: 150px;
-}
-
-.section-label {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #7750FF;
-  margin-bottom: 36px;
-}
-
-.highlight-label {
-  background-color: #FF69B4;
-  color: #171238;
-  padding: 1px 3px;
-}
-
-.conferences-intro h1 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(75px, 6vw, 112px);
-  font-weight: 700;
-  line-height: 0.95;
-  letter-spacing: -7px;
-
-  margin: 0 0 48px;
-  color: #171238;
-}
-
-.conferences-intro h3 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 27px;
-  font-weight: 500;
-  line-height: 1.45;
-
-  margin: 0 0 23px;
-  color: #171238;
-}
-
-.intro-description {
-  max-width: 550px;
-
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 1.9;
-
-  color: #817A9C;
-  margin: 0;
-}
 
 
 /* =========================
@@ -100,16 +12,16 @@
 .conferences-list {
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 26px;
   min-width: 0;
 }
 
 .conference-card {
   width: 100%;
-  min-height: 375px;
+  min-height: 280px;
 
   display: grid;
-  grid-template-columns: 28% 72%;
+  grid-template-columns: 33% 67%;
 
   background-color: #FBF8F0;
   border: 1px solid #DDD5E9;
@@ -130,7 +42,7 @@
   align-items: stretch;
   justify-content: center;
 
-  min-height: 373px;
+  min-height: 280px;
   position: relative;
   overflow: hidden;
 }
@@ -138,7 +50,7 @@
 .speaker-placeholder {
   width: 100%;
   height: 100%;
-  min-height: 373px;
+  min-height: 278px;
 
   position: relative;
   display: flex;
@@ -159,32 +71,33 @@
 
 .speaker-silhouette {
   position: absolute;
-  width: 72%;
-  height: 68%;
-  bottom: 0;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.speaker-head {
-  width: 48%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-
-  background-color: #17113F;
-  z-index: 2;
-}
-
-.speaker-body {
-  position: absolute;
-
-  width: 100%;
+  width: 70%;
   height: 70%;
   bottom: 0;
 
-  border-radius: 48% 48% 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.speaker-head {
+  position: relative;
+  z-index: 2;
+
+  width: 44%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-bottom: 6px;
+
+  background-color: #17113F;
+}
+
+.speaker-body {
+  width: 100%;
+  height: 50%;
+
+  border-radius: 45% 45% 0 0 / 60% 60% 0 0;
   background-color: #17113F;
 }
 
@@ -208,7 +121,7 @@
 ========================= */
 
 .conference-info {
-  padding: 43px 44px 35px;
+  padding: 28px 30px;
 
   display: flex;
   flex-direction: column;
@@ -223,7 +136,7 @@
   font-weight: 500;
   letter-spacing: 2px;
 
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 }
 
 .conference-info h2 {
@@ -233,14 +146,14 @@
   line-height: 1.2;
 
   color: #171238;
-  margin: 0 0 15px;
+  margin: 0 0 12px;
 }
 
 .conference-description {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.2;
 
   color: #817A9C;
   margin: 0;
@@ -249,7 +162,6 @@
 
 .conference-speaker {
   margin-top: auto;
-  padding-top: 35px;
 
   display: flex;
   flex-direction: column;

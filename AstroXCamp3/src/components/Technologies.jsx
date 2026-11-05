@@ -52,23 +52,25 @@ function Technologies() {
   return (
     <section className="technologies" id="workshops">
 
-      <div className="technologies-header">
-        <div className="technologies-title">
-          <h2>
-            Find your field.
-            <br />
-            <span>Build your skills.</span>
-          </h2>
-        </div>
+<div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 mb-[75px]">  <div>
+    <p className="font-title text-[10px] font-[450] text-white mb-[3%]">
+      02&ensp;/&ensp;TECHNOLOGY &ensp;
+                <span className="bg-yellow px-1  text-dark">WORKSHOPS</span>
 
-        <div className="technologies-intro">
-          <p>
-            Explore technology through practical workshops led by
-            experienced mentors. Choose your track and learn by doing.
-          </p>
-        </div>
-      </div>
+    </p>
+    <h2 className="font-title text-[clamp(75px,6vw,112px)] font-bold leading-[0.95] tracking-[-7px] text-white">
+      Find your field.
+    </h2>
+    <h2 className="font-title text-[clamp(75px,6vw,112px)] font-bold leading-[0.95] tracking-[-7px] text-[#f36bad]">
+      Build your skills.
+    </h2>
+  </div>
 
+  <p className="font-text text-[15px] font-[500] text-white/55 max-w-[440px]">
+    Explore technology through practical workshops led by experienced
+    mentors. Choose your track and learn by doing.
+  </p>
+</div>
       <div className="tracks-container">
         {tracks.map((track) => (
           <article

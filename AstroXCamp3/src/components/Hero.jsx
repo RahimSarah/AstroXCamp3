@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom'
-import heroBackground from '../assets/hero-background.png'
+import heroBackground from '../assets/hero_bg.png'
 import './Hero.css'
 
 function Hero() {
@@ -16,7 +16,7 @@ function Hero() {
           EXPLORE THE FUTURE OF HUMANITY
         </p>
 
-        <h1>
+        <h1 className="font-title">
           What if we could
           <br />
           live <span>beyond Earth?</span>
