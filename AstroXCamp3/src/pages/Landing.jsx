@@ -1,6 +1,9 @@
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
+import Technologies from '../components/Technologies'
+import Conferences from "../components/Conferences"
+
 import About from '../components/About'
 import Workshops from '../components/Workshops'
 import Conferences from '../components/Conferences'
@@ -12,6 +15,8 @@ function Landing() {
     <>
       <Navbar />
       <Hero />
+      <Technologies />
+      <Conferences />
       <About />
       <Workshops />
       <Conferences  />
@@ -19,6 +24,7 @@ function Landing() {
       <Agenda />
       <FnQ />
       <Footer />
+      
     </>
   )
 }
