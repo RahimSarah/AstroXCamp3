@@ -78,6 +78,7 @@ function Footer() {
           <div className="text-pink font-title"> CONTACT US</div>
           <a className="block hover:text-white/100" href="https://dz.linkedin.com/company/astrotech-esi" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a className="block hover:text-white/100" href="https://www.instagram.com/astrotech_esi/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a className="block hover:text-white/100" href="mailto:astrotech@esi.dz">astrotech@esi.dz</a>
         </div>
         <div className="flex h-full gap-4 ml-[20%]">
           <div>
